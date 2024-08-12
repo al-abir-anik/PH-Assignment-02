@@ -199,14 +199,9 @@ nav a {
   color: rgba(255, 255, 255, 65%);
 }
 
-
-
-
-
 /*        Change your habit style       */
 
-
-.changeHabit-section{
+.changeHabit-section {
   width: 1044px;
   height: 452px;
   margin: 0 auto;
@@ -215,7 +210,7 @@ nav a {
   justify-content: space-between;
 }
 
-.changeHabit-header{
+.changeHabit-header {
   width: 670px;
   height: 120px;
   display: flex;
@@ -224,13 +219,13 @@ nav a {
   gap: 14px;
   margin: 0 auto;
 }
-.changeHabit-header h2{
+.changeHabit-header h2 {
   font-size: 48px;
   font-weight: 900;
   line-height: 120%;
   color: #fff;
 }
-.changeHabit-header p{
+.changeHabit-header p {
   width: 670px;
   font-size: 14px;
   font-weight: 400;
@@ -240,13 +235,12 @@ nav a {
   color: rgba(255, 255, 255, 50%);
 }
 
-
-.changeHabit-body{
+.changeHabit-body {
   display: flex;
   justify-content: space-evenly;
 }
 
-.changeHabit-body div{
+.changeHabit-body div {
   width: 232px;
   height: 274px;
   display: flex;
@@ -254,17 +248,17 @@ nav a {
   justify-content: center;
   align-items: center;
 }
-.changeHabit-body img{
+.changeHabit-body img {
   border-radius: 100%;
 }
-.changeHabit-body h4{
+.changeHabit-body h4 {
   font-size: 18px;
   font-weight: 600;
   line-height: 120%;
   color: #fff;
   margin-top: 30px;
 }
-.changeHabit-body p{
+.changeHabit-body p {
   width: 232px;
   font-size: 14px;
   font-weight: 400;
@@ -275,12 +269,9 @@ nav a {
   color: rgba(255, 255, 255, 50%);
 }
 
-
-
-
 /*     Run Extra section style    */
 
-.runExtra-section{
+.runExtra-section {
   width: 1060px;
   height: 372px;
   margin: 0 auto;
@@ -289,12 +280,12 @@ nav a {
   align-items: center;
 }
 
-.runExtra-section div{
+.runExtra-section div {
   width: 444px;
   height: 290px;
 }
 
-.runExtra-section h3{
+.runExtra-section h3 {
   width: 340px;
   font-size: 48px;
   font-weight: 900;
@@ -302,7 +293,7 @@ nav a {
   color: #fff;
   margin-bottom: 14px;
 }
-.runExtra-section p{
+.runExtra-section p {
   width: 444px;
   font-size: 14px;
   font-weight: 400;
@@ -311,7 +302,7 @@ nav a {
   margin-bottom: 34px;
   color: rgba(255, 255, 255, 50%);
 }
-.runExtra-section button{
+.runExtra-section button {
   width: 224px;
   height: 54px;
   padding: 16px 40px;
@@ -321,9 +312,121 @@ nav a {
   font-size: 18px;
   font-weight: 600;
   line-height: 22px;
+  cursor: pointer;
 }
-.runExtra-section img{
+.runExtra-section img {
   width: 366px;
   height: 312px;
   border-radius: 18px;
+}
+
+/*       Meet Our team section      */
+
+.ourTeam-section {
+  width: 1060px;
+  height: 782px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ourTeam-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ourTeam-header h3 {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 120%;
+  color: #fff;
+  margin-bottom: 14px;
+}
+.ourTeam-header p {
+  width: 672px;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: rgba(255, 255, 255, 50%);
+  text-align: center;
+}
+
+.ourTeam-members {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.ourTeam-members h5 {
+  position: absolute;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 120%;
+  color: #fff;
+  z-index: 10;
+  bottom: 36px;
+  left: 20px;
+}
+
+.ourTeam-members p {
+  position: absolute;
+  font-size: 14px;
+  line-height: 120%;
+  color: #fff;
+  bottom: 16px;
+  left: 20px;
+}
+
+.team-member {
+  width: 326px;
+  height: 272px;
+  border-radius: 18px;
+  background-color: rgba(0, 0, 0, 20%);
+  position: relative;
+  z-index: 1;
+}
+
+.team-member::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 20%);
+  z-index: 2;
+}
+
+.team-member1 {
+  background-image: url(images/trainer1.png);
+}
+.team-member2 {
+  background-image: url(images/trainer2.png);
+}
+.team-member3 {
+  background-image: url(images/trainer3.png);
+  opacity: 80%;
+}
+.team-member4 {
+  background-image: url(images/trainer4.png);
+}
+.team-member5 {
+  background-image: url(images/trainer5.png);
+}
+.team-member6 {
+  background-image: url(images/trainer6.png);
+}
+
+.team-member1,
+.team-member2,
+.team-member3,
+.team-member4,
+.team-member5,
+.team-member6 {
+  background-size: cover;
+  background-position: center;
 }
