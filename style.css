@@ -13,7 +13,7 @@
 }
 
 body {
-  background-color: #313131;
+  background-color: #000000;
 }
 
 /*           header style        */
@@ -47,6 +47,11 @@ nav ul {
   align-items: center;
   justify-content: space-around;
 }
+
+.menu-icon {
+  display: none;
+}
+
 #home-btn {
   width: 92px;
   height: 38px;
@@ -72,7 +77,7 @@ nav a {
   color: #fff;
 }
 
-/*      hero section    */
+/*          hero section       */
 
 .hero-section {
   width: 1060px;
@@ -110,8 +115,7 @@ nav a {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.5px;
-  color: #fff;
-  opacity: 50%;
+  color: rgba(255, 255, 255, 50%);
 }
 
 .hero-btn1,
@@ -453,12 +457,11 @@ form p {
   width: 100%;
 }
 
-select-container option {
+option {
   font-size: 16px;
   line-height: 22px;
-  color: rgba(255, 255, 255, 60%);
-  background-color: rgba(255, 255, 255, 10%);
-  padding: 12px 40px 12px 20px;
+  color: #313131;
+  padding: 30px;
 }
 
 #submit-btn {
@@ -562,7 +565,6 @@ select-container option {
 }
 .team-member3 {
   background-image: url(images/trainer3.png);
-  opacity: 80%;
 }
 .team-member4 {
   background-image: url(images/trainer4.png);
@@ -664,4 +666,272 @@ footer {
   letter-spacing: 0.3px;
   color: rgba(255, 255, 255, 50%);
   margin: 0 auto;
+}
+
+/***********   Style for Small Device  **********/
+
+@media (max-width: 576px) {
+  header {
+    height: 1124px;
+  }
+  nav {
+    width: 354px;
+    height: 44px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav ul {
+    display: none;
+  }
+  .menu-icon {
+    display: inline;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .hero-section {
+    width: 100%;
+    height: 972px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero-card {
+    width: 354px;
+    height: 336px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .hero-card h4 {
+    width: 286px;
+    height: 130px;
+    font-size: 36px;
+  }
+
+  .hero-card p {
+    width: 274px;
+    height: 96px;
+  }
+
+  .hero-btn1,
+  .hero-btn2 {
+    width: 168px;
+  }
+
+  /*    hero image style for small device */
+
+  .hero-img img {
+    width: 354px;
+  }
+
+  .img-card1 {
+    width: 156px;
+    height: 73px;
+    padding: 15px 17px;
+    border-radius: 10px;
+    position: absolute;
+    top: 272px;
+    left: 12px;
+  }
+  .img-card1 i {
+    font-size: 30px;
+    margin-right: 7px;
+  }
+  .img-card1 h3 {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+  }
+  .img-card1 p {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.4px;
+    margin-top: 6px;
+  }
+  .img-card2 {
+    width: 146px;
+    height: 74px;
+    border-radius: 10px;
+    padding: 12px 16px 12px 18px;
+    top: 48px;
+    right: 14px;
+  }
+  .img-card2 h3 {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 30px;
+    letter-spacing: 0.7px;
+  }
+  .img-card2 p {
+    font-size: 9px;
+    line-height: 15px;
+    letter-spacing: 0.7px;
+    margin-top: 3px;
+  }
+
+  /*    Change your Habit section style for small device */
+
+  .changeHabit-section {
+    width: 340px;
+    height: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .changeHabit-header {
+    width: 318px;
+    height: 124px;
+  }
+  .changeHabit-header h2 {
+    font-size: 31px;
+  }
+  .changeHabit-header p {
+    width: 316px;
+  }
+
+  .changeHabit-body {
+    height: 1250px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /*     Run Extra section style for small device   */
+
+  .runExtra-section {
+    width: 354px;
+    height: 470px;
+    flex-direction: column;
+  }
+
+  .runExtra-section div {
+    width: 288px;
+    height: 264px;
+  }
+
+  .runExtra-section h3 {
+    width: 270px;
+    font-size: 32px;
+  }
+  .runExtra-section p {
+    width: 286px;
+    margin-bottom: 24px;
+  }
+  .runExtra-section button {
+    width: 288px;
+  }
+  .runExtra-section img {
+    width: 288px;
+    height: 170px;
+  }
+
+  /*         BMI Calculator Style for small device     */
+
+  .bmi-section {
+    width: 394px;
+    height: 930px;
+    align-items: center;
+  }
+
+  .bmi-header h3 {
+    font-size: 32px;
+  }
+
+  .bmi-header p {
+    width: 352px;
+  }
+
+  .bmi-body {
+    height: 732px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .bmi-body caption {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  /*    BMI Form style    */
+
+  form {
+    width: 354px;
+    height: 396px;
+  }
+  form h4 {
+    font-size: 16px;
+  }
+
+  #form-input1,
+  #form-input2,
+  #form-input3,
+  #form-input4,
+  #form-input5 {
+    padding: 13px 20px;
+  }
+
+  #form-input1,
+  #form-input2,
+  #form-input3,
+  #form-input4 {
+    width: 48%;
+  }
+
+  /*  Meet Our team section style for small device */
+
+  .ourTeam-section {
+    width: 354px;
+    height: 1340px;
+  }
+
+  .ourTeam-header h3 {
+    font-size: 32px;
+  }
+  .ourTeam-header p {
+    width: 310px;
+  }
+
+  .ourTeam-members {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member {
+    width: 313px;
+  }
+
+  .team-member1,
+  .team-member4 {
+    display: none;
+  }
+
+  /*      Footer Style for small device     */
+
+  footer {
+    height: 990px;
+    padding: 44px 0 58px 0;
+  }
+
+  .top-footer {
+    width: 354px;
+    height: 750px;
+    flex-direction: column;
+  }
+
+  .top-part1 {
+    width: 316px;
+    height: 200px;
+  }
 }
