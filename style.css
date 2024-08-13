@@ -320,6 +320,159 @@ nav a {
   border-radius: 18px;
 }
 
+/*         BMI Calculator Style      */
+
+.bmi-section {
+  width: 1060px;
+  height: 595px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bmi-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bmi-header h3 {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 120%;
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+.bmi-header p {
+  width: 672px;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: rgba(255, 255, 255, 50%);
+  text-align: center;
+}
+
+.bmi-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bmi-body caption {
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 120%;
+  color: #fff;
+  margin-bottom: 52px;
+}
+
+table {
+  width: 310px;
+  height: 216px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+  color: #fff;
+  padding: 15px 18px;
+}
+td {
+  font-size: 14px;
+  line-height: 120%;
+  color: rgba(255, 255, 255, 50%);
+  padding: 13px 18px;
+}
+td,
+th {
+  border: 1px solid rgba(255, 255, 255, 10%);
+}
+
+/*    BMI Form style    */
+
+form {
+  width: 588px;
+  height: 386px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+form h4 {
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 120%;
+  color: #fff;
+}
+
+form p {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: rgba(255, 255, 255, 50%);
+}
+
+.form-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+#form-input1,
+#form-input2,
+#form-input3,
+#form-input4,
+#form-input5 {
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 60%);
+  background-color: rgba(255, 255, 255, 10%);
+  border-radius: 8px;
+  padding: 12px 40px 12px 20px;
+  border: none;
+  outline: none;
+}
+
+#form-input1,
+#form-input2,
+#form-input3,
+#form-input4 {
+  width: 49%;
+}
+
+#form-input1,
+#form-input3 {
+  margin-right: 7px;
+}
+
+#form-input5 {
+  width: 100%;
+}
+
+select-container option {
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 60%);
+  background-color: rgba(255, 255, 255, 10%);
+  padding: 12px 40px 12px 20px;
+}
+
+#submit-btn {
+  width: 224px;
+  height: 54px;
+  border-radius: 42px;
+  background-color: #e6533c;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  cursor: pointer;
+}
+
 /*       Meet Our team section      */
 
 .ourTeam-section {
@@ -429,4 +582,86 @@ nav a {
 .team-member6 {
   background-size: cover;
   background-position: center;
+}
+
+/*         Footer Style         */
+
+footer {
+  width: 100%;
+  height: 490px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 66px 0 36px 0;
+}
+
+.top-footer {
+  width: 1060px;
+  height: 250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-part1 {
+  width: 444px;
+  height: 176px;
+}
+.top-part1 h2 {
+  font-size: 70px;
+  font-weight: 800;
+  line-height: 120%;
+  color: #e6533c;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.top-part1 p {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: rgba(255, 255, 255, 50%);
+}
+
+.top-part2,
+.top-part3 {
+  width: 182px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top-part2 h4,
+.top-part3 h4 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 120%;
+  color: #fff;
+}
+.top-part2 a,
+.top-part3 a {
+  font-size: 23px;
+  line-height: 120%;
+  color: rgba(255, 255, 255, 50%);
+  cursor: pointer;
+}
+.top-part2 a:hover,
+.top-part3 a:hover {
+  text-decoration: underline;
+}
+
+.top-part2 div,
+.top-part3 div {
+  height: 172px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.low-footer {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: rgba(255, 255, 255, 50%);
+  margin: 0 auto;
 }
