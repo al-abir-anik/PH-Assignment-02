@@ -920,18 +920,20 @@ footer {
   /*      Footer Style for small device     */
 
   footer {
+    width: 80%;
+    margin: 0 auto;
     height: 990px;
     padding: 44px 0 58px 0;
   }
 
   .top-footer {
     width: 354px;
-    height: 750px;
+    height: 760px;
     flex-direction: column;
   }
 
   .top-part1 {
-    width: 316px;
+    width: 300px;
     height: 200px;
   }
 }
