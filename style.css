@@ -484,7 +484,7 @@ option {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -584,6 +584,136 @@ option {
 .team-member6 {
   background-size: cover;
   background-position: center;
+}
+
+/*      Choose The Plan section Style     */
+
+.choosePlan-section {
+  width: 1060px;
+  height: 652px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.choosePlan-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.choosePlan-header h3 {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 120%;
+  color: #fff;
+  margin-bottom: 14px;
+}
+.choosePlan-header p {
+  width: 672px;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: rgba(255, 255, 255, 50%);
+  text-align: center;
+}
+
+.choosePlan-body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.choosePlan-body h6 {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.plan1,
+.plan3 {
+  width: 326px;
+  height: 370px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 10%);
+  color: rgba(255, 255, 255, 65%);
+  text-align: center;
+}
+.plan2 {
+  width: 326px;
+  height: 480px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #e6533c;
+  color: #fff;
+  text-align: center;
+}
+
+.choosePlan-body button {
+  width: 224px;
+  height: 54px;
+  border: 1px solid rgba(255, 255, 255, 65%);
+  background-color: transparent;
+  color: rgba(255, 255, 255, 65%);
+  border-radius: 42px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+
+.plan1 button:hover,
+.plan3 button:hover {
+  background-color: #fff;
+  color: #e6533c;
+}
+
+.plan2 button {
+  background-color: #fff;
+  color: #e6533c;
+}
+
+.plan2 button:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.plan-price {
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  color: #fff;
+  margin: 20px 0;
+}
+
+.price-tag {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 40px;
+  letter-spacing: 1px;
+}
+
+.plan1-access p,
+.plan3-access p,
+.plan2-access p {
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 120%;
+  color: rgba(255, 255, 255, 50%);
+}
+.plan2-access p {
+  color: #fff;
 }
 
 /*         Footer Style         */
@@ -915,6 +1045,72 @@ footer {
   .team-member1,
   .team-member4 {
     display: none;
+  }
+
+  /*   Choose plan section style for small device */
+
+  .choosePlan-section {
+    width: 354px;
+    height: 1300px;
+  }
+
+  .choosePlan-header {
+    width: 308px;
+    height: 130px;
+  }
+
+  .choosePlan-header h3 {
+    font-size: 32px;
+    text-align: center;
+  }
+  .choosePlan-header p {
+    width: 300px;
+  }
+
+  .choosePlan-body {
+    width: 100%;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .price-tag {
+    font-size: 32px;
+  }
+
+  .plan1,
+  .plan3 {
+    width: 326px;
+    height: 300px;
+  }
+  .plan2 {
+    width: 306px;
+    height: 420px;
+    border-radius: 16px;
+  }
+
+  .choosePlan-body button {
+    width: 224px;
+    height: 54px;
+  }
+
+  .plan-price {
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 15px 0;
+  }
+
+  .plan1-access p,
+  .plan3-access p,
+  .plan2-access p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 120%;
+    color: rgba(255, 255, 255, 50%);
+  }
+  .plan2-access p {
+    color: #fff;
   }
 
   /*      Footer Style for small device     */
